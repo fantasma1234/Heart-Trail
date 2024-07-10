@@ -23,8 +23,13 @@ body.addEventListener("mousemove", (event) => {
     }, 3000)
 })
 
+body.addEventListener("touchstart", (event) => {
+    event.preventDefault()
+})
+
 body.addEventListener("touchmove", (event) => {
     console.log(event);
+    event.preventDefault();
     [...event.changedTouches].forEach(touch => {
         //pega a posição do dedo na tela
         const span = document.createElement('span')
