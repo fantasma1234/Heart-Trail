@@ -35,6 +35,6 @@ span {
     100% {
         transform: translate(-50%, -5000%);
         opacity: 0;
-        filter: hue-rotate(720deg);
+        filter: hue-rotate(-720deg);
     }
 }
